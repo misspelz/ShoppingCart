@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI by Pelz</title>
+    <link rel="stylesheet" href="./css/ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65e9ac7cab.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+              screen: {
+                md: "768px",
+                lg: "1024px"
+              },
+            extend: {
+              colors: {
+                clifford: '#da373d'
+              },
+              fontFamily: {
+                elite: ['Special Elite']
+              }
+            
+            }
+          }
+        }
+      </script>
+      <script async src="./ui.js"></script>
+</head>
+<body>
+    <!-- nav bar  -->
+    <nav class="w-[100%] h-1/2 bg-black py-5 flex items-center justify-center">
+          <!-- <div>
+            <a href="/"><img class="w-24" src="./img/pelzpng.png" alt="" /></a>
+          </div> -->
+
+          <!-- big screen menu -->
+          <ul
+            class="flex flex-row space-x-10 text-white text-sm uppercase"
+          >
+            <li class="hover:text-blue-400 text-[15px] lg:text-[25px] hover:underline text-blue-400"><a href="./index.html">HOME</a></li>
+            <li class="hover:text-blue-400 text-[15px] lg:text-[25px] hover:underline"><a href="./collections.html">COLLECTIONS</a></li>
+            <li class="hover:text-blue-400 text-[15px] lg:text-[25px] hover:underline"><a href="./about.html">ABOUT</a></li>
+          </ul>
+          <!-- <div class="hidden md:block">
+            <i
+              class="fa fa-hand-peace-o"
+              style="color: white; font-size: 18px"
+            ></i>
+          </div> -->
+          <!-- mobile menu -->
+          <!-- <div id="bar" class="md:hidden lg:hidden">
+            <i class="fa fa-bars" style="color: white; font-size: 18px"></i>
+          </div>
+          <ul
+            id="menu"
+            class="absolute left-0 top-16 w-full p-8 bg-black flex flex-col justify-center items-center space-y-4 font-bold text-white text-sm uppercase border-t-2 hidden rounded-b-3xl z-20 md:hidden lg:hidden"
+          >
+            <li class="hover:text-slate-600 text-[20px]"><a href="/">HOME</a></li>
+            <li class="hover:text-slate-600 text-[20px]"><a href="/">COLLECTIONS</a></li>
+            <li class="hover:text-slate-600 text-[20px]"><a href="/">ABOUT</a></li>
+          </ul>
+        </div> -->
+      </nav>
+
+      <div class="w-[100%] relative top-0">
+        <img src="./img/geometric-1732847__340.webp" alt="" class="w-[100%] h-[70vh]">
+      </div>
+
+      <div class="text-[50px] w-[100%] text-white font-elite absolute top-[75px] text-center lg:text-[90px] font-bold">
+        <h1>Miss Pelz</h1>
+      </div>
+
+      <div class="w-[100%] flex justify-center align-center ">
+        <div class="absolute top-[150px] lg:top-[180px] bg-white pt-[40px] pb-[30px] pr-[180px] pl-[180px] w-[20%] opacity-50 rounded lg:w-30%"></div>
+      </div>
+
+      <!-- <div class="absolute top-[165px] lg:top-[195px] w-[100%] text-center text-[25px] font-sans font-bold"> -->
+        <button class="absolute top-[165px] lg:top-[195px] w-[100%] text-center text-[25px] font-sans font-bold"><h3>See Latest Arrivals</h3></button>
+      <!-- </div> -->
+        
+      <!-- play button icon -->
+        <div class="w-[100%] flex justify-center align-center ">
+            <button class="absolute top-[250px] lg:top-[280px] w-[10%] text-center bg-white pt-[30px] pb-[30px] pr-[35px] pl-[35px] flex justify-center align-center rounded-lg"><i class="fa fa-play fa-2xl"></i></button>
+        </div>
+
+      <!-- EVENTS -->
+      <div id="events" class="block ">
+        <div class="font-elite text-center text-[40px] font-bold mt-[10px]">
+            <h2>Events</h2>
+        </div>
+    
+        <div id="wrapper" class="p-[10px] overflow-x-auto mt-[50px]">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>January 28</td>
+                        <td>February 28</td>
+                        <td>March 28</td>
+                        <td><button id="btn-events" class="hover:opacity-40">Buy Ticket</button></td>
+                    </tr>
+                    <tr>
+                        <td>January 28</td>
+                        <td>February 28</td>
+                        <td>March 28</td>
+                        <td><button id="btn-events" class="hover:opacity-40">Buy Ticket</button></td>
+                    </tr>
+                    <tr>
+                        <td>January 28</td>
+                        <td>February 28</td>
+                        <td>March 28</td>
+                        <td><button id="btn-events" class="hover:opacity-40">Buy Ticket</button></td>
+                    </tr>
+                    <tr>
+                        <td>January 28</td>
+                        <td>February 28</td>
+                        <td>March 28</td>
+                        <td><button id="btn-events" class="hover:opacity-40">Buy Ticket</button></td>
+                    </tr>
+                    <tr>
+                        <td>January 28</td>
+                        <td>February 28</td>
+                        <td>March 28</td>
+                        <td><button id="btn-events" class="hover:opacity-40">Buy Ticket</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-black p-[20px] mt-[100px]">
+        <div class="w-[100%] flex justify-center items-center">
+            <div class="text-[20px] font-elite font-bold text-white lg:text-[50px] w-[50%] flex justify-center items-center">
+                <h1>Miss Pelz</h1>
+            </div>
+    
+            <div style="color: #fff;" class="flex justify-center items-center space-x-4 w-[50%]">
+                <i class="fa fa-youtube-play lg:text-[30px]"></i>
+                <i class="fa fa-instagram lg:text-[30px]"></i>
+                <i class="fa fa-twitter lg:text-[30px]"></i>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>
