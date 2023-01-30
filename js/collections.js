@@ -74,7 +74,7 @@ function updateItemQty(event){
   // console.log(number_of_items_parent)
   priceElement = number_of_items_grandparent.children[1]
   priceElementContent = priceElement.textContent.replace("₦", "") // remove the naira symbol so you can multiply just numbers
-  priceElement.textContent = "₦" + number_of_items.value*priceElementContent
+  priceElement = "₦" + number_of_items.value*priceElementContent
   // console.log(priceElementContent)
 
   // to make sure the itemQty isn't less than 1 and it's an integer
